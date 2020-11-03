@@ -1,0 +1,139 @@
+:root{
+    box-sizing: border-box;
+    padding:0px;
+    margin:0px;
+}
+.page1{
+    display:flex;
+    flex-direction: row;
+    height: 100vh;
+}
+.page1__right_panel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    flex-direction: column;
+    flex:1;
+}
+.page1__left_panel_1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../Assets/minecraft1.png') no-repeat center center/cover;
+    flex:6;
+}
+.page1__left_panel_2{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    flex:6;
+    transition:opacity 0.3s linear;
+    
+}
+.page1__left_panel_2__myWorld{
+    display: none;
+    background:white;
+    height: 100vh;
+    width:100vh;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+}
+.main__btnStart{
+    display: block;
+    margin:20px auto;
+    padding:10px 70px;
+    font-size:20px;
+    border-radius: 4px;
+    font-family: 'Press Start 2P', cursive;
+}
+.main__btnStart:hover{
+    cursor: pointer;
+}
+.main_side_items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main_side_items__pickaxe img,
+.main_side_items__shovel img,
+.main_side_items__axe img{
+    height:100px;
+    width:100px;
+    border:2px white solid;
+    margin-bottom: 10px;
+}
+.main_side_items__pickaxe img:hover,
+.main_side_items__shovel img:hover,
+.main_side_items__axe img:hover,
+.main_side_items__btn_resetworld
+{
+    cursor: pointer;
+}
+.main_side_items__chosen
+{
+    height:60px;
+    width:60px;
+
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+.main_side_items__chosen:hover
+{
+    cursor: pointer;
+}
+.main_side_items__chosen img{
+    height:60px;
+    width:60px;
+    border:2px white solid;
+}
+.main_side_items__chosen img:hover{
+    border:4px blue solid;
+}
+
+.main_side_items__btn_resetworld{
+    padding:5px 20px;
+    margin-top:40px;
+    align-items: center;
+    font-size: 16px;
+    font-family: 'Press Start 2P', cursive;
+}
+/* tile */
+.block{
+    background-position:center;
+    background-repeat:no-repeat; 
+    background-size:cover;
+    height:5vh;
+    box-sizing: border-box;
+    /* width:5vh; */
+}
+.block:hover{
+    border: 1px white solid;
+}
+/* grass */
+.blockSky
+{
+    background-image:url("../Assets/sky_block.png");
+}
+.blockCloud{
+    background-color: white;
+}
+.blockTreeLeaf{
+    background-image:url("../Assets/tree_leaf.png");
+}
+.blockTreeTrunk{
+    background-image:url("../Assets/tree_trunk.png");
+}
+.blockStone{
+    background-image:url("../Assets/stone_block.png");
+}
+.blockWhite{
+    background-image:url("../Assets/block_white.png");
+}
+.blockTopLand{
+    background-image:url("../Assets/land_top_block.png");
+}
+.blockBottomLand{
+    background-image:url("../Assets/land_bottom_block.png");
+}   
